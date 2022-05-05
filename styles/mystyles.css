@@ -1,0 +1,109 @@
+/* Stylesheet für RWD-EA */
+/* Mobile first Ansatz nach Vorgaben */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body, nav ul {
+  margin: 0;
+}
+
+#holder, nav, main {
+  width: 100%;
+}
+
+#holder {
+  background-color: #a49d91;
+  color: white;
+  font-size: 120%;
+}
+
+header, section, nav ul li a {
+  padding: 0.4rem;
+}
+
+header {
+  background-color: #7c9dd1;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  padding: 0.1rem;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-top: 0.4rem;
+}
+
+nav ul li a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: white;
+  border: thin solid white;
+  border-radius: 5px;
+  color: #7c9dd1;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* @media Block nach Vorgaben */
+@media screen and (min-width: 40em) {
+  #holder {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  header, nav, main, img {
+    padding: 0.5rem;
+  }
+
+  header {
+    width: 100%;
+    height: auto;
+  }
+
+  nav {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    width: 90%;
+    font-size: 1rem;
+    padding: 0.3rem;
+    margin: 0.1rem;
+  }
+
+  nav a:hover {
+    background-color: #a49d91;
+    color: white;
+  }
+
+  main {
+    flex: 3;
+  }
+
+  img {
+    float: left;
+    width: auto;
+  }
+}
